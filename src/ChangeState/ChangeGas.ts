@@ -17,7 +17,7 @@ const ChangeGas = createSlice ({
     name: "change",
     initialState,
     reducers: {
-        changeName(state: MystateType, action: PayloadAction<string> ) {
+        changeName(state, action: PayloadAction<string> ) {
             state.list.push({
                 title: action.payload,
             });
